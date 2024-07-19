@@ -1,2 +1,2 @@
 # JavaScript
-A code repro for javascript
+Learn java Script in easy way 
