@@ -54,8 +54,8 @@
 // *********some conversion***********
 
 // console.log("1" + 2); // => 12
-// console.log( 1 + "2");  // => 12
-// console.log("1" + 2 + 2); // => 122 This conversion depend upon the first varibale in perantetish
+console.log( 19 + "2");  // => 12  // + work as concatinate
+// console.log("1" - 2 * 8); // => 122 This conversion depend upon the first varibale in perantetish ** But in case of +ADD only
 // ( If their is STRING then all converted into strings )
 // console.log( 1 + 2 + "2");  // => 32 This conversion depend upon the first varibale in perantetish 
 
@@ -76,4 +76,4 @@
 // ******Postfix******
 let x =4
 const y = ++x;
-console.log(x, y); // Here both x and y are converted into 5
+// console.log(x, y); // Here both x and y are converted into 5

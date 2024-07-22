@@ -41,4 +41,43 @@ function loginUserMessage(username){
     return `${username} is logged In`
 }
 
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+// Use of rest operator
+// function calculatePrice(...num1){  // ... in parameter is rest operator 
+//          return num1;
+// } 
+
+// what if 
+function calculatePrice(val, val2,  ...num1){  // ... in parameter is rest operator 
+    return num1;
+} 
+// console.log(calculatePrice(200, 599, 433, 42222)); // output is [433, 42222]
+
+
+//  const user = {  
+//     name: 'ritansh',
+//     age: 23
+// }
+
+function handleObject(anyobject){
+    // console.log(`Hello my name is ${anyobject.name} n my age is ${anyobject.age}`)
+}
+
+// handleObject(user);
+
+// But if we want to pass direct object that also possible
+handleObject({
+    name: 'ritansh',
+    age: 23
+})
+
+
+// Passing Array
+const myArr = [22, 33, 44, 55]
+
+function retunArr(getArray){
+    return getArray[2]
+}
+// console.log(retunArr(myArr));
+// console.log(retunArr([22, 33, 43, 44 ]));

@@ -1,28 +1,28 @@
 //Array
 
 const myArr = [0, 1, 2, 3, 4, 5]
-// const myHero = ["ironman", 'spidy']
-// const myArr2 = new Array(1, 2, 3, 4)
-// console.log(myArr[2]);
+const myHero = ["ironman", 'spidy']
+const myArr2 = new Array(1, 2, 3, 4)
+console.log(myArr[2]);
 
 // array method
 
-// myArr.push(6)  //add value in last
+myArr.push(6)  //add value in last
 // console.log(myArr);
 
-// myArr.pop()  // remove last array
+myArr.pop()  // remove last array
 // console.log(myArr);
 
-// myArr.unshift(9)  // add value in frst
+myArr.unshift(9)  // add value in frst
 // console.log(myArr);
 
-// myArr.shift()
+myArr.shift()
 // console.log(myArr);
 
 // console.log(myArr.includes(9))  // to check value is present in the array or not
 // console.log(myArr.indexOf(3))
 
-// const newArr = myArr.join()  // to convert array into string
+const newArr = myArr.join()  // to convert array into string
 // console.log(myArr); 
 // console.log(newArr);
 // console.log( typeof myArr);
@@ -38,7 +38,7 @@ const myArr = [0, 1, 2, 3, 4, 5]
 
 
 // **** splice - will manipulutae the original array 
-// myArr = [0, 1, 2, 3, 4, 5]
+myArr = [0, 1, 2, 3, 4, 5]
 // we apply slice on [1,3]
 // OUTPUT => 1, 2, 3 and the original array will chnage it will be [0, 4, 5] **********
 // console.log("B", myArr);
@@ -51,19 +51,19 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const marval_hero = ["Irnoman", "Spidy", "Thor"]
 const dc_hero = ["Batman", "Superman"]
 
-// marval_hero.push(dc_hero)  // **it will push as array  [ 'Irnoman', 'Spidy', 'Thor', [ 'Batman', 'Superman' ] ]
+marval_hero.push(dc_hero)  // **it will push as array  [ 'Irnoman', 'Spidy', 'Thor', [ 'Batman', 'Superman' ] ]
 // console.log(marval_hero); 
 
 // let all_hero = marval_hero.concat(dc_hero) // **add in sigle array :- [ 'Irnoman', 'Spidy', 'Thor', 'Batman', 'Superman' ]
 // console.log(all_hero);
 
 // ********** some simple method - spred Array ***********
-//  const all_hero = [ ...marval_hero, ...dc_hero]  // it is known as spreading method (every element is individual now)
+ const all_hero = [ ...marval_hero, ...dc_hero]  // it is known as spreading method (every element is individual now)
 //  console.log(all_hero);
 
 // **********8 Flat method - when array in array
-// const messy_array = [1, 2, [3, 4, 5], 6, [7, 8,[9,]]]
-// let real_array = messy_array.flat(Infinity);
+const messy_array = [1, 2, [3, 4, 5], 6, [7, 8,[9,]]]
+let real_array = messy_array.flat(Infinity);
 // console.log(real_array)  // output:- [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
