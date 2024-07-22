@@ -35,9 +35,9 @@ let test1 = () =>{
 // Arrow function
 
 // Explicit return - in this return function is must
-// const addTwo = (num1, num2) => {
-//       return num1 + num2
-// }
+const addTwo = (num1, num2) => {
+      return num1 + num2
+}
 
 
 //  Implicit return - in this return function not requird
