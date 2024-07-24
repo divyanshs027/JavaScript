@@ -6,8 +6,48 @@
     <title>Document</title>
 </head>
 <body style="background-color: black; color: azure;">
-    <ul>
-        <l></l>
+    <ul class="language">
+        <li>JavaScript</li>
     </ul>
 </body>
+<script>
+     function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("pyhton");
+    addLanguage('ruby');
+
+// More optime code bcz it will not travers whole row it will direcr go to last line
+    function addOptimize(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("java");
+
+// Edit
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // console.log(secondlang)
+    const newli = document.createElement('li')
+    // console.log(newli)
+    newli.textContent = "Mojo"
+    secondlang.replaceWith(newli)
+
+// edit
+    // const secondlan = document.querySelector("li:first-child")
+    // const wli = document.createElement('li')
+    // wli.textContent = "c++"
+    // secondlan.replaceWith(wli)
+
+//Edit in optimize form
+    const firslang = document.querySelector("li:first-child")
+    firslang.outerHTML = '<li>TYPE SCRIPT </li>'
+
+//Remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+
+</script>
 </html>
