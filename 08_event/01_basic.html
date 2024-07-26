@@ -43,20 +43,34 @@
     // 2:- EventCapturing - who work from upper node to lower node [True]
 
 // Some example
-    document.getElementById('images').addEventListener('click', function(e){
-        console.log('ul click')
-    }, false)
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log('owl click')
-        e.stopPropagation(); // using this event will not bubble to upper element
-    }, false)
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log('ul click')
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('owl click')
+    //     e.stopPropagation(); // using this event will not bubble to upper element
+    // }, false)
 
 
 // preventDefault use
-    document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault();
-        e.stopPropagation(); // to stop bubbling
-        console.log('goolge clicked')
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation(); // to stop bubbling
+    //     console.log('goolge clicked')
+    // })
+
+// Remove method
+    document.querySelector('#images').addEventListener('click', function(e){
+        //  console.log(e.target.parentNode);
+        //  let removeIT = e.target.parentNode
+        //  removeIT.remove();
+        
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
     })
 
 </script>
